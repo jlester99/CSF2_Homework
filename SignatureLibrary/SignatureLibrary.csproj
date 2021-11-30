@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C199C637-5A2E-41A5-90E3-92F8B85117B1}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ClassesLibrary</RootNamespace>
-    <AssemblyName>ClassesLibrary</AssemblyName>
+    <ProjectGuid>{63297F62-0C02-423A-9ECC-0030BC92A772}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SignatureLibrary</RootNamespace>
+    <AssemblyName>SignatureLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>ClassesLibrary.CSF2HomeworkHarness</StartupObject>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,19 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CSF2HomeworkHarness.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Signature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SignatureLibrary\SignatureLibrary.csproj">
-      <Project>{63297f62-0c02-423a-9ecc-0030bc92a772}</Project>
-      <Name>SignatureLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
