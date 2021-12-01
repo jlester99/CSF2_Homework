@@ -30,6 +30,22 @@ namespace ClassesLibrary
 
             #endregion
 
+            #region Vehicle
+            //string make, string model, int year, float weight
+            Console.WriteLine("\n\n**** Vehicles *****\n");
+            Vehicle v1 = new Vehicle(); //default
+            v1.Make = "Toyota";
+            v1.Model = "Highlander";
+            v1.Year = 2019;
+            v1.Weight = 2000f;
+
+            Console.WriteLine(v1);
+            //
+            Vehicle v2 = new Vehicle("Honda", "Pilot", 2017, 2100f);
+            Console.WriteLine(v2);
+
+            #endregion
+
         }//end svm
 
     }//end class
