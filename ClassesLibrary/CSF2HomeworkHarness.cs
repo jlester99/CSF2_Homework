@@ -60,6 +60,22 @@ namespace ClassesLibrary
 
             #endregion
 
+            #region Contact Info
+            //string streetAddress, string city, string state, string zip, string phone, string email
+            Console.WriteLine("\n\n**** Contact Info *****\n");
+            ContactInfo c1 = new ContactInfo(); //default
+            c1.StreetAddress = "1500 Wildberry Lane";
+            c1.City = "New York";
+            c1.State = "New York";
+            c1.Zip = "10004";
+            c1.Phone = "315-781-1212";
+            c1.Email = "rgreen1@outlook.com";
+            Console.WriteLine(c1);
+            //
+            ContactInfo c2 = new ContactInfo("1500 Wildberry Lane", "New York", "New York", "10004", "315-781-1212", "mgellar1@outlook.com");
+            Console.WriteLine(c2);
+            #endregion
+
         }//end svm
 
     }//end class
