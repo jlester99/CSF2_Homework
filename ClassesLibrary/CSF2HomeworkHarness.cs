@@ -46,6 +46,20 @@ namespace ClassesLibrary
 
             #endregion
 
+            #region Login
+            //string username, string password
+            Console.WriteLine("\n\n**** Login Info *****\n");
+            Login l1 = new Login(); //default
+            l1.Username = "RGreen1";
+            l1.Password = "EmmaRoss20!";
+
+            Console.WriteLine(l1);
+            //
+            Login l2 = new Login("MGellar1", "ChandBing!");
+            Console.WriteLine(l2);
+
+            #endregion
+
         }//end svm
 
     }//end class
